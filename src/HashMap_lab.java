@@ -27,7 +27,7 @@ public class HashMap_lab<K,V> {
 
         int index = getIndex(key);
         Node<K, V> node = table[index];
-        //проверка на "есть ли уже такой ключ"
+        // проверка на "есть ли уже такой ключ"
         while(node != null){
             if(node.key.equals(key)){
                 node.value = value;
